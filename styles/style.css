@@ -1,0 +1,54 @@
+/* media query */
+/* cores */
+button {
+  border: unset;
+  border-radius: 20rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-sedan {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.btn-suv {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179deg, 100%, 13%);
+}
+
+section {
+  border: 1px solid;
+  width: 90vw;
+  height: 40vh;
+}
+@media only screen and (min-width: 1440px) {
+  section {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+
+article {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin: 0 1.5rem;
+  padding: 2rem;
+}
+
+h2 {
+  color: hsl(0deg, 0%, 95%);
+}
+
+/* Cores Cards */
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
