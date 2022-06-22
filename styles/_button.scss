@@ -2,16 +2,34 @@ button {
   border: unset;
   border-radius: 20rem;
   padding: 0.5rem 1rem;
+  width: 6.375rem;
 }
 
 .btn-sedan {
   color: $sedan;
+}
+.btn-sedan:hover {
+  background-color: $sedan;
+  color: white;
+  box-shadow: 0 0 1rem white;
 }
 
 .btn-suv {
   color: $suv;
 }
 
+.btn-suv:hover {
+  background-color: $suv;
+  color: white;
+  box-shadow: 0 0 1rem white;
+}
+
 .btn-luxury {
   color: $luxury;
+}
+
+.btn-luxury:hover {
+  background-color: $luxury;
+  color: white;
+  box-shadow: 0 0 1rem white;
 }

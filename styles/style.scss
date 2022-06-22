@@ -1,9 +1,16 @@
 @import "./variabels";
 @import "./button";
+@import "./reset";
+@import "./fonts";
+
+body {
+  display: grid;
+  justify-items: center;
+}
 
 section {
-  border: 1px solid;
-  width: 90vw;
+  border: 1px solid hidden;
+  width: 80vw;
   height: 40vh;
 
   @media only screen and (min-width: $desktop) {
@@ -13,18 +20,31 @@ section {
 }
 
 article {
+  display: grid;
   color: hsla(0, 0%, 100%, 0.75);
   margin: 0 1.5rem;
   padding: 2rem;
+  row-gap: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.2;
 }
 
 h2 {
   color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
 }
 
 /* Cores Cards */
 .sedan {
   background-color: $sedan;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .suv {
@@ -33,4 +53,6 @@ h2 {
 
 .luxury {
   background-color: $luxury;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }

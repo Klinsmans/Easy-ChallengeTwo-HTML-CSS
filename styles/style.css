@@ -1,26 +1,182 @@
 /* media query */
 /* cores */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 button {
   border: unset;
   border-radius: 20rem;
   padding: 0.5rem 1rem;
+  width: 6.375rem;
 }
 
 .btn-sedan {
   color: hsl(31deg, 77%, 52%);
 }
 
+.btn-sedan:hover {
+  background-color: hsl(31deg, 77%, 52%);
+  color: white;
+  box-shadow: 0 0 1rem white;
+}
+
 .btn-suv {
   color: hsl(184deg, 100%, 22%);
+}
+
+.btn-suv:hover {
+  background-color: hsl(184deg, 100%, 22%);
+  color: white;
+  box-shadow: 0 0 1rem white;
 }
 
 .btn-luxury {
   color: hsl(179deg, 100%, 13%);
 }
 
+.btn-luxury:hover {
+  background-color: hsl(179deg, 100%, 13%);
+  color: white;
+  box-shadow: 0 0 1rem white;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
 section {
-  border: 1px solid;
-  width: 90vw;
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+}
+
+section {
+  border: 1px solid hidden;
+  width: 80vw;
   height: 40vh;
 }
 @media only screen and (min-width: 1440px) {
@@ -31,18 +187,31 @@ section {
 }
 
 article {
+  display: grid;
   color: hsla(0deg, 0%, 100%, 0.75);
   margin: 0 1.5rem;
   padding: 2rem;
+  row-gap: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.2;
 }
 
 h2 {
   color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
 }
 
 /* Cores Cards */
 .sedan {
   background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .suv {
@@ -51,4 +220,6 @@ h2 {
 
 .luxury {
   background-color: hsl(179deg, 100%, 13%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
