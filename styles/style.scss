@@ -3,19 +3,26 @@
 @import "./reset";
 @import "./fonts";
 
-body {
+main {
   display: grid;
   justify-items: center;
+
+  @media only screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 section {
   border: 1px solid hidden;
   width: 80vw;
-  height: 40vh;
+  align-items: stretch;
 
   @media only screen and (min-width: $desktop) {
     width: 16rem;
-    height: 16rem;
   }
 }
 
@@ -27,6 +34,10 @@ article {
   row-gap: 1rem;
   font-size: 0.9375rem;
   line-height: 1.2;
+
+  @media only screen and (min-width: $desktop) {
+    row-gap: 1.5rem;
+  }
 }
 
 h2 {
@@ -45,14 +56,28 @@ p {
   background-color: $sedan;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+
+  @media only screen and (min-width: $desktop) {
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
 }
 
 .suv {
   background-color: $suv;
+
+  @media only screen and (min-width: $desktop) {
+    border-radius: 0;
+  }
 }
 
 .luxury {
   background-color: $luxury;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+
+  @media only screen and (min-width: $desktop) {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
 }

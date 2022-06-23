@@ -169,20 +169,28 @@ table {
   border-spacing: 0;
 }
 
-body {
+main {
   display: grid;
   justify-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 }
 
 section {
   border: 1px solid hidden;
   width: 80vw;
-  height: 40vh;
+  align-items: stretch;
 }
 @media only screen and (min-width: 1440px) {
   section {
     width: 16rem;
-    height: 16rem;
   }
 }
 
@@ -194,6 +202,11 @@ article {
   row-gap: 1rem;
   font-size: 0.9375rem;
   line-height: 1.2;
+}
+@media only screen and (min-width: 1440px) {
+  article {
+    row-gap: 1.5rem;
+  }
 }
 
 h2 {
@@ -213,13 +226,30 @@ p {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
+@media only screen and (min-width: 1440px) {
+  .sedan {
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+  }
+}
 
 .suv {
   background-color: hsl(184deg, 100%, 22%);
+}
+@media only screen and (min-width: 1440px) {
+  .suv {
+    border-radius: 0;
+  }
 }
 
 .luxury {
   background-color: hsl(179deg, 100%, 13%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  .luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
 }
